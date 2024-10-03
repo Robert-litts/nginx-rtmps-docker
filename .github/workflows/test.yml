@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: tiangolo/nginx-rtmp:latest
+          tags: robertlitts/nginx-rtmps:latest
           platforms: linux/amd64,linux/arm64
   check:
     if: always()

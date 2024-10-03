@@ -28,11 +28,11 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            tiangolo/nginx-rtmp:latest
-            tiangolo/nginx-rtmp:latest-${{ env.DATE_TAG }} 
+            robertlitts/nginx-rtmps:latest
+            robertlitts/nginx-rtmps:latest-${{ env.DATE_TAG }} 
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v4
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: tiangolo/nginx-rtmp
+          repository: robertlitts/nginx-rtmps
